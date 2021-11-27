@@ -1,3 +1,5 @@
+# FIXME: Add ShouldProcess
+
 function Remove-BranchesWithUpstreamGone {
     (Get-BranchesWithUpstreamGone) | ForEach-Object {
       Write-Host "Removing branch $_"
