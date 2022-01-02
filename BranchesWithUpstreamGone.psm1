@@ -3,12 +3,12 @@ $Private = @( Get-ChildItem -Path $PSScriptRoot\Private\*.ps1 -ErrorAction Silen
 
 Foreach ($Import in @($Private + $Public))
 {
-    Try
-    {
-        . $Import.FullName
-    }
-    Catch
-    {
-        Write-Error -Message "Failed to import function $($Import.FullName): $_"
-    }
+    Try
+    {
+        . $Import.FullName
+    }
+    Catch
+    {
+        Write-Error -Message "Failed to import function $($Import.FullName): $_"
+    }
 }
