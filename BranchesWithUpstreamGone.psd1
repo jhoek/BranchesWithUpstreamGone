@@ -30,7 +30,7 @@
     Copyright         = 'Copyright (c) 2021 Jan Hoek'
 
     # Description of the functionality provided by this module
-    Description       = 'Inspired by https://jpearson.blog/2021/10/20/tip-remove-brancheswithupstreamgone/'
+    Description       = 'PowerShell module for finding and deleting git branches whose upstream counterparts no longer exist. Inspired by this blog post from James Pearson: https://jpearson.blog/2021/10/20/tip-remove-brancheswithupstreamgone/.'
 
     # Minimum version of the PowerShell engine required by this module
     # PowerShellVersion = ''
@@ -95,13 +95,13 @@
         PSData = @{
 
             # Tags applied to this module. These help with module discovery in online galleries.
-            # Tags = @()
+            Tags       = @('git', 'module', 'powershell', 'branch', 'upstream')
 
             # A URL to the license for this module.
-            # LicenseUri = ''
+            LicenseUri = 'https://github.com/jhoek/BranchesWithUpstreamGone/blob/master/LICENSE'
 
             # A URL to the main website for this project.
-            # ProjectUri = ''
+            ProjectUri = 'https://github.com/jhoek/BranchesWithUpstreamGone'
 
             # A URL to an icon representing this module.
             # IconUri = ''
